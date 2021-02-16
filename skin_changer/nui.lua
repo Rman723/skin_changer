@@ -22,7 +22,7 @@ local shirt2texture = 0
 local shirt = 0
 local shirttexture = 0
 
-RegisterCommand("nui", function(source, args)
+RegisterCommand("change", function(source, args)
     SetDisplay(not display)
     TriggerEvent('values',"hatval", hat)
     TriggerEvent('values',"hattextval", hattexture)
@@ -473,19 +473,6 @@ end)
 
 
 
-
--- this cb is used as the main route to transfer data back 
--- and also where we hanld the data sent from js
-RegisterNUICallback("main", function(data)
-    chat(data.text, {0,255,0})
-    SetDisplay(false)
-end)
-
-RegisterNUICallback("error", function(data)
-    chat(data.error, {255,0,0})
-    SetDisplay(false)
-end)
-
 function SetDisplay(bool)
     display = bool
     SetNuiFocus(bool, bool)
@@ -523,19 +510,5 @@ function chat(str, color)
         }
     )
 end
-local arg = 0
-RegisterCommand('Gess', function(source, args)
-    arg = arg+1
-    --local arg = table.concat(args, "")
-    local ped = GetPlayerPed(-1)
-    --SetPedComponentVariation(ped, 3, 1, 1, 0)
-    SetPedComponentVariation(ped, 14,1,1, 2)	
-    print(GetPedDrawableVariation(ped, 3))
-    --SetPedRandomComponentVariation(ped, true)
-    --SetPedDefaultComponentVariation(ped)
-    --SetPedComponentVariation(ped, componentId, drawableId, textureId, paletteId)
-    --SetPedPropIndex(ped, 0, arg, 3, true)
-    --SetPedRandomProps(ped)
-    --print(GetNumberOfPedDrawableVariations(ped, 3))
-end)
+
 
