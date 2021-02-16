@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="container" class="container">
+            <h1 style="text-align: center;font-size: 40px;padding: 10px;">&#128084;Clothes&#128084;</h1>
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Shirt2:</p>
+                <button id="minusshirt2"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="shirt2value" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshirt2"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Shirt2 Texture:</p>
+                <button id="minusshirt2text"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="shirt2texturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshirt2text"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Shirt:</p>
+                <button id="minusshirt"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="shirtvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshirt"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Shirt Texture:</p>
+                <button id="minusshirttext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="shirttexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshirttext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Pants:</p>
+                <button id="minuspants"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="pantsvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="pluspants"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Pants Texture:</p>
+                <button id="minuspantstext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="pantstexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="pluspantstext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Hair:</p>
+                <button id="minushair"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="hairvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plushair"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Hair Texture:</p>
+                <button id="minushairtext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="hairtexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plushairtext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Arm:</p>
+                <button id="minusarm"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="armvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusarm"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Arm Texture:</p>
+                <button id="minusarmtext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="armtexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusarmtext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Shoes:</p>
+                <button id="minusshoes"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="shoesvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshoes"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Shoes Texture:</p>
+                <button id="minusshoestext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="shoestexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusshoestext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+            <h1 style="text-align: center;font-size: 40px;padding: 10px;">👓Accessories👓</h1>
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Hat:</p>
+                <button id="minushat"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="hatvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plushat"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Hat Texture:</p>
+                <button id="minushattext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="hattexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plushattext"style="float:left;margin: 5px;text-align:center">+</button>
+                <br>
+                <button id="removehat"style="float:left;margin: 5px;text-align:center">Remove Hat</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Glasses:</p>
+                <button id="minusglasses"style="float:left;margin:5px;;text-align:center">-</button><p id="glassesvalue" style="float:left;margin: 5px;font-size: 25px;"></p><button id="plusglasses"style="float:left;margin: 5px;text-align:center">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Glasses Texture:</p>
+                <button id="minusglassestext"style="float:left;margin:5px;;text-align:center">-</button><p id="glassestexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p><button id="plusglassestext"style="float:left;margin: 5px;text-align:center">+</button>
+                <br>
+                <button id="removeglasses"style="float:left;margin: 5px;text-align:center">Remove Glasses</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Ear:</p>
+                <button id="minusear"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="earvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusear"style="float:left;margin: 5px;text-align:center">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Ear Texture:</p>
+                <button id="minuseartext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="eartexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="pluseartext"style="float:left;margin: 5px;text-align:center">+</button>
+                <br>
+                <button id="removeear"style="float:left;margin: 5px;text-align:center">Remove Ear</button>
+            </div>
+            
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Mask:</p>
+                <button id="minusmask"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="maskvalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusmask"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Mask Texture:</p>
+                <button id="minusmasktext"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="masktexturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusmasktext"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+
+            <div class="divc">
+                <p style="font-size: 18px;margin: 5px;">Bags:</p>
+                <button id="minusarm2"style="float:left;margin:5px;text-align:center;">-</button>
+                <p id="arm2value" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusarm2"style="float:left;margin: 5px;text-align:center;">+</button>
+                <br>
+                <br>
+                <p style="font-size: 18px;margin: 5px;">Bags Texture:</p>
+                <button id="minusarm2text"style="float:left;margin:5px;;text-align:center">-</button>
+                <p id="arm2texturevalue" style="float:left;margin: 5px;font-size: 25px;"></p>
+                <button id="plusarm2text"style="float:left;margin: 5px;text-align:center">+</button>
+            </div>
+        </div>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>
